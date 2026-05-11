@@ -77,7 +77,7 @@
         stroke: #073440;
         stroke-width: 3;
         filter: url(#titleGlow);
-        animation: titleBlink 1.15s steps(1, end) infinite;
+        animation: titleBlink 2.8s steps(1, end) infinite;
       }
 
       .title {
@@ -94,6 +94,29 @@
         opacity: 0.55;
       }
 
+      .droid {
+        fill: #ffffff;
+        font-family: "Courier New", monospace;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        opacity: 0;
+        filter: url(#blueGlow);
+        animation: droidFlash 7.2s steps(1, end) infinite;
+      }
+
+      .droid:nth-of-type(2) {
+        animation-delay: 1.6s;
+      }
+
+      .droid:nth-of-type(3) {
+        animation-delay: 3.2s;
+      }
+
+      .droid:nth-of-type(4) {
+        animation-delay: 4.8s;
+      }
+
       @keyframes titleBlink {
         0% { fill: #ffe83a; opacity: 1; }
         16% { fill: #00f5ff; opacity: 0.92; }
@@ -107,6 +130,12 @@
       @keyframes starBlink {
         0%, 100% { opacity: 0.72; }
         50% { opacity: 0.16; }
+      }
+
+      @keyframes droidFlash {
+        0%, 10% { opacity: 0; }
+        11%, 18% { opacity: 0.92; }
+        19%, 100% { opacity: 0; }
       }
     </style>
   </defs>
@@ -182,6 +211,13 @@
   </g>
 
   <rect width="900" height="280" fill="url(#fade)"/>
+
+  <g>
+    <text class="droid" x="78" y="74">DROIDJE.COM</text>
+    <text class="droid" x="640" y="64">DROIDJE.COM</text>
+    <text class="droid" x="142" y="132">DROIDJE.COM</text>
+    <text class="droid" x="666" y="128">DROIDJE.COM</text>
+  </g>
 
   <g text-anchor="middle" dominant-baseline="middle">
     <text class="title mid" x="466" y="134">Mike</text>
