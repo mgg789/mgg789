@@ -1,0 +1,156 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="280" viewBox="0 0 900 280" role="img" aria-labelledby="title desc">
+  <title id="title">Retro blinking Mike banner</title>
+  <desc id="desc">A retro arcade style pixel banner with the word Mike blinking in different colors.</desc>
+  <defs>
+    <linearGradient id="scanline" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.08"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.12"/>
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      .bg {
+        fill: #080b12;
+      }
+
+      .frame {
+        fill: none;
+        stroke: #2cffd3;
+        stroke-width: 4;
+        opacity: 0.8;
+      }
+
+      .pixel {
+        rx: 2;
+        ry: 2;
+        filter: url(#glow);
+        animation: blink 1.2s steps(1, end) infinite;
+      }
+
+      .pixel:nth-of-type(3n) {
+        animation-delay: 0.15s;
+      }
+
+      .pixel:nth-of-type(4n) {
+        animation-delay: 0.3s;
+      }
+
+      .pixel:nth-of-type(5n) {
+        animation-delay: 0.45s;
+      }
+
+      .subtitle {
+        fill: #d6fff8;
+        font-family: "Courier New", monospace;
+        font-size: 20px;
+        letter-spacing: 4px;
+        animation: subtitleBlink 1.4s steps(1, end) infinite;
+      }
+
+      .scan {
+        fill: url(#scanline);
+        opacity: 0.45;
+      }
+
+      .star {
+        animation: starBlink 0.8s steps(1, end) infinite;
+      }
+
+      @keyframes blink {
+        0% { fill: #00ff66; }
+        16% { fill: #00e5ff; }
+        32% { fill: #ff3df2; }
+        48% { fill: #fff700; }
+        64% { fill: #ff5a36; }
+        80% { fill: #a855ff; }
+        100% { fill: #00ff66; }
+      }
+
+      @keyframes subtitleBlink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0.35; }
+      }
+
+      @keyframes starBlink {
+        0%, 100% { fill: #00ff66; opacity: 1; }
+        50% { fill: #ff3df2; opacity: 0.35; }
+      }
+    </style>
+  </defs>
+
+  <rect class="bg" width="900" height="280"/>
+  <rect x="18" y="18" width="864" height="244" class="frame"/>
+  <rect x="30" y="30" width="840" height="220" class="scan"/>
+
+  <g transform="translate(88 62)">
+    <rect class="star" x="0" y="24" width="10" height="10"/>
+    <rect class="star" x="28" y="0" width="10" height="10"/>
+    <rect class="star" x="780" y="38" width="10" height="10"/>
+    <rect class="star" x="812" y="10" width="10" height="10"/>
+  </g>
+
+  <g transform="translate(138 70)">
+    <!-- M -->
+    <rect class="pixel" x="0" y="0" width="18" height="18"/>
+    <rect class="pixel" x="0" y="24" width="18" height="18"/>
+    <rect class="pixel" x="0" y="48" width="18" height="18"/>
+    <rect class="pixel" x="0" y="72" width="18" height="18"/>
+    <rect class="pixel" x="0" y="96" width="18" height="18"/>
+    <rect class="pixel" x="24" y="24" width="18" height="18"/>
+    <rect class="pixel" x="48" y="48" width="18" height="18"/>
+    <rect class="pixel" x="72" y="24" width="18" height="18"/>
+    <rect class="pixel" x="96" y="0" width="18" height="18"/>
+    <rect class="pixel" x="96" y="24" width="18" height="18"/>
+    <rect class="pixel" x="96" y="48" width="18" height="18"/>
+    <rect class="pixel" x="96" y="72" width="18" height="18"/>
+    <rect class="pixel" x="96" y="96" width="18" height="18"/>
+
+    <!-- I -->
+    <rect class="pixel" x="156" y="0" width="18" height="18"/>
+    <rect class="pixel" x="180" y="0" width="18" height="18"/>
+    <rect class="pixel" x="204" y="0" width="18" height="18"/>
+    <rect class="pixel" x="180" y="24" width="18" height="18"/>
+    <rect class="pixel" x="180" y="48" width="18" height="18"/>
+    <rect class="pixel" x="180" y="72" width="18" height="18"/>
+    <rect class="pixel" x="156" y="96" width="18" height="18"/>
+    <rect class="pixel" x="180" y="96" width="18" height="18"/>
+    <rect class="pixel" x="204" y="96" width="18" height="18"/>
+
+    <!-- K -->
+    <rect class="pixel" x="264" y="0" width="18" height="18"/>
+    <rect class="pixel" x="264" y="24" width="18" height="18"/>
+    <rect class="pixel" x="264" y="48" width="18" height="18"/>
+    <rect class="pixel" x="264" y="72" width="18" height="18"/>
+    <rect class="pixel" x="264" y="96" width="18" height="18"/>
+    <rect class="pixel" x="336" y="0" width="18" height="18"/>
+    <rect class="pixel" x="312" y="24" width="18" height="18"/>
+    <rect class="pixel" x="288" y="48" width="18" height="18"/>
+    <rect class="pixel" x="312" y="72" width="18" height="18"/>
+    <rect class="pixel" x="336" y="96" width="18" height="18"/>
+
+    <!-- E -->
+    <rect class="pixel" x="408" y="0" width="18" height="18"/>
+    <rect class="pixel" x="432" y="0" width="18" height="18"/>
+    <rect class="pixel" x="456" y="0" width="18" height="18"/>
+    <rect class="pixel" x="480" y="0" width="18" height="18"/>
+    <rect class="pixel" x="408" y="24" width="18" height="18"/>
+    <rect class="pixel" x="408" y="48" width="18" height="18"/>
+    <rect class="pixel" x="432" y="48" width="18" height="18"/>
+    <rect class="pixel" x="456" y="48" width="18" height="18"/>
+    <rect class="pixel" x="408" y="72" width="18" height="18"/>
+    <rect class="pixel" x="408" y="96" width="18" height="18"/>
+    <rect class="pixel" x="432" y="96" width="18" height="18"/>
+    <rect class="pixel" x="456" y="96" width="18" height="18"/>
+    <rect class="pixel" x="480" y="96" width="18" height="18"/>
+  </g>
+
+  <text x="450" y="224" text-anchor="middle" class="subtitle">PRESS START</text>
+</svg>
