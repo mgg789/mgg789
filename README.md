@@ -3,5 +3,5 @@
 </div>
 
 <p align="center">
-  <b>mgg789</b> - retro mode enabled
+  Mike, CEO of <b>DROIDJE</b>
 </p>
