@@ -65,13 +65,6 @@
         animation-delay: 0.44s;
       }
 
-      .back {
-        fill: #00d2c8;
-        stroke: #041321;
-        stroke-width: 10;
-        opacity: 0.86;
-      }
-
       .mid {
         fill: #12f79b;
         stroke: #04253b;
@@ -133,13 +126,27 @@
     <circle class="star" cx="812" cy="39" r="1.3"/>
     <circle class="star" cx="111" cy="135" r="1.1"/>
     <circle class="star" cx="790" cy="138" r="1.1"/>
+    <circle class="star" cx="52" cy="116" r="1.0"/>
+    <circle class="star" cx="201" cy="124" r="1.4"/>
+    <circle class="star" cx="286" cy="73" r="1.0"/>
+    <circle class="star" cx="426" cy="111" r="1.2"/>
+    <circle class="star" cx="509" cy="86" r="1.0"/>
+    <circle class="star" cx="594" cy="29" r="1.3"/>
+    <circle class="star" cx="682" cy="119" r="1.1"/>
+    <circle class="star" cx="858" cy="92" r="1.4"/>
+    <circle class="star" cx="23" cy="31" r="1.1"/>
+    <circle class="star" cx="875" cy="26" r="1.0"/>
   </g>
 
   <g opacity="0.88">
     <path class="grid dim" d="M0 40H900"/>
     <path class="grid dim" d="M0 83H900"/>
     <path class="grid dim" d="M0 125H900"/>
+    <path class="grid dim" d="M75 0L355 143"/>
+    <path class="grid dim" d="M205 0L390 143"/>
     <path class="grid dim" d="M450 0V143"/>
+    <path class="grid dim" d="M695 0L510 143"/>
+    <path class="grid dim" d="M825 0L545 143"/>
     <path class="grid dim" d="M300 0L410 143"/>
     <path class="grid dim" d="M600 0L490 143"/>
     <path class="grid dim" d="M138 0L360 143"/>
@@ -151,13 +158,25 @@
     <path class="grid" d="M0 181H900"/>
     <path class="grid" d="M0 211H900"/>
     <path class="grid" d="M0 248H900"/>
+    <path class="grid" d="M120 145V280"/>
+    <path class="grid" d="M245 145V280"/>
+    <path class="grid" d="M365 145V280"/>
     <path class="grid" d="M450 145V280"/>
+    <path class="grid" d="M535 145V280"/>
+    <path class="grid" d="M655 145V280"/>
+    <path class="grid" d="M780 145V280"/>
+    <path class="grid" d="M450 145L390 280"/>
     <path class="grid" d="M450 145L335 280"/>
+    <path class="grid" d="M450 145L280 280"/>
     <path class="grid" d="M450 145L222 280"/>
+    <path class="grid" d="M450 145L155 280"/>
     <path class="grid" d="M450 145L88 280"/>
     <path class="grid" d="M450 145L0 270"/>
+    <path class="grid" d="M450 145L510 280"/>
     <path class="grid" d="M450 145L565 280"/>
+    <path class="grid" d="M450 145L620 280"/>
     <path class="grid" d="M450 145L678 280"/>
+    <path class="grid" d="M450 145L745 280"/>
     <path class="grid" d="M450 145L812 280"/>
     <path class="grid" d="M450 145L900 270"/>
   </g>
@@ -165,9 +184,8 @@
   <rect width="900" height="280" fill="url(#fade)"/>
 
   <g text-anchor="middle" dominant-baseline="middle">
-    <text class="title back" x="492" y="142">Mike</text>
-    <text class="title mid" x="486" y="134">Mike</text>
-    <text class="title front" x="480" y="125">Mike</text>
+    <text class="title mid" x="466" y="134">Mike</text>
+    <text class="title front" x="460" y="125">Mike</text>
   </g>
 
   <rect class="scan" width="900" height="280"/>
