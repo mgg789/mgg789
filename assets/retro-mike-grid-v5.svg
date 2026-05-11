@@ -97,7 +97,7 @@
       .droid {
         fill: #ffffff;
         font-family: "Courier New", monospace;
-        font-size: 13px;
+        font-size: 18px;
         font-weight: 700;
         letter-spacing: 2px;
         opacity: 0;
@@ -134,8 +134,8 @@
 
       @keyframes droidFlash {
         0%, 10% { opacity: 0; }
-        11%, 18% { opacity: 0.92; }
-        19%, 100% { opacity: 0; }
+        11%, 33% { opacity: 0.92; }
+        34%, 100% { opacity: 0; }
       }
     </style>
   </defs>
@@ -213,10 +213,10 @@
   <rect width="900" height="280" fill="url(#fade)"/>
 
   <g>
-    <text class="droid" x="78" y="74">DROIDJE.COM</text>
-    <text class="droid" x="640" y="64">DROIDJE.COM</text>
-    <text class="droid" x="142" y="132">DROIDJE.COM</text>
-    <text class="droid" x="666" y="128">DROIDJE.COM</text>
+    <text class="droid" x="74" y="76">DROIDJE.COM</text>
+    <text class="droid" x="618" y="66">DROIDJE.COM</text>
+    <text class="droid" x="136" y="134">DROIDJE.COM</text>
+    <text class="droid" x="642" y="130">DROIDJE.COM</text>
   </g>
 
   <g text-anchor="middle" dominant-baseline="middle">
