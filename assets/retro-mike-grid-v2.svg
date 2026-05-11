@@ -89,16 +89,10 @@
 
       .title {
         font-family: Impact, "Arial Black", "Courier New", monospace;
-        font-size: 104px;
+        font-size: 124px;
         font-weight: 900;
-        letter-spacing: 8px;
+        letter-spacing: 7px;
         paint-order: stroke fill;
-      }
-
-      .shine {
-        fill: #fff59f;
-        opacity: 0.65;
-        animation: shineBlink 1.15s steps(1, end) infinite;
       }
 
       .scan {
@@ -115,11 +109,6 @@
         64% { fill: #ff7a18; opacity: 1; }
         80% { fill: #ffffff; opacity: 0.72; }
         100% { fill: #ffe83a; opacity: 1; }
-      }
-
-      @keyframes shineBlink {
-        0%, 48%, 100% { opacity: 0.7; }
-        49%, 82% { opacity: 0.22; }
       }
 
       @keyframes starBlink {
@@ -176,10 +165,9 @@
   <rect width="900" height="280" fill="url(#fade)"/>
 
   <g text-anchor="middle" dominant-baseline="middle">
-    <text class="title back" x="450" y="141">Mike</text>
-    <text class="title mid" x="444" y="133">Mike</text>
-    <text class="title front" x="438" y="124">Mike</text>
-    <rect class="shine" x="262" y="91" width="348" height="8"/>
+    <text class="title back" x="492" y="142">Mike</text>
+    <text class="title mid" x="486" y="134">Mike</text>
+    <text class="title front" x="480" y="125">Mike</text>
   </g>
 
   <rect class="scan" width="900" height="280"/>
